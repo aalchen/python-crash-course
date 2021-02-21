@@ -42,9 +42,8 @@ make_shirt()
 make_shirt("M")
 make_shirt(text="Hi")
 
+
 #8-5 - Cities
-
-
 def describe_city(city, country="Canada"):
     print(city.title() + " is in " + country.title() + ".")
 
@@ -52,3 +51,13 @@ def describe_city(city, country="Canada"):
 describe_city("Toronto")
 describe_city("Vancouver")
 describe_city("Mannheim", "Germany")
+
+
+#8-6 - City Names
+def city_country(city, country):
+    print(city.title() + ", " + country.title())
+
+
+city_country("prague", "czech")
+city_country("ischia", "italy")
+city_country("glasgow", "scotland")
