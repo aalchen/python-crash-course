@@ -61,3 +61,36 @@ def city_country(city, country):
 city_country("prague", "czech")
 city_country("ischia", "italy")
 city_country("glasgow", "scotland")
+
+
+#8-7 - Album
+def make_album(artist, album, num=""):
+    album = {'artist': artist, 'album': album, 'number': num}
+    return album
+
+
+album_info = make_album("Taylor Swift", "1989")
+print(album_info)
+
+#8-8 - While loop for User Albums
+active = True
+prompt1 = "What is the artist?"
+prompt2 = "What is the album?"
+prompt3 = "What is the number of tracks (optional)?"
+
+
+def make_album(artist, album, num=""):
+    album = {'artist': artist, 'album': album, 'number': num}
+    return album
+
+
+while active:
+    artist = input(prompt1)
+    album = input(prompt2)
+    num = input(prompt3)
+    if artist != "quit" or album != "quit" or num != "quit":
+        album_info = make_album(artist, album, num)
+        print(album_info)
+    else:
+        active = False
+        break
