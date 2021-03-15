@@ -79,33 +79,39 @@
 #         active = False
 #         break
 
-#8-9 - Magicians
+# #8-9 - Magicians
 
-magicians = ["ryan", "job", "michael", "tobias"]
+# magicians = ["ryan", "job", "michael", "tobias"]
+
+# def show_magicians(magicians):
+#     for mag in magicians:
+#         print(mag)
+
+# show_magicians(magicians)
+
+# #8-10/11 - Great Magicians
+
+# def make_great(magicians):
+#     great_magicians = []
+#     while magicians:
+#         magician = magicians.pop()
+#         great_magician = magician + " the Great"
+#         great_magicians.append(great_magician)
+#     for great_magician in great_magicians:
+#         magicians.append(great_magician)
+
+# show_magicians(magicians)
+
+# print("\n")
+# make_great(magicians)
+# show_magicians(magicians)
+
+#8-12 - Sandwiches
 
 
-def show_magicians(magicians):
-    for mag in magicians:
-        print(mag)
+def make_sandwich(*toppings):
+    print(toppings)
 
 
-show_magicians(magicians)
-
-#8-10 - Great Magicians
-
-
-def make_great(magicians):
-    great_magicians = []
-    while magicians:
-        magician = magicians.pop()
-        great_magician = magician + " the Great"
-        great_magicians.append(great_magician)
-    for great_magician in great_magicians:
-        magicians.append(great_magician)
-
-
-show_magicians(magicians)
-
-print("\n")
-make_great(magicians)
-show_magicians(magicians)
+make_sandwich("Lettuce", "Salami", "Cheddar")
+make_sandwich("Arugula", "Proscuitto")
